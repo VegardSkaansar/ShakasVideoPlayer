@@ -29,7 +29,17 @@ public class App extends Application
         final Label status = new Label("");
 
         mp = createMediaPlayer(
-          "file:///C:/Users/vegard/Downloads/IMG_4294.mp4", 
+          "file:///C:/Users/Duncan/Downloads/iCloud%20Photos%20from%20Duncan%20Agar/iCloud%20Photos%20from%20Duncan%20Agar/IMG_4274.MP4", 
+          status
+        );
+
+          mp = createMediaPlayer(
+            "file:///C:/Users/Duncan/Downloads/iCloud%20Photos%20from%20Duncan%20Agar/iCloud%20Photos%20from%20Duncan%20Agar/IMG_4274.MP4", 
+            status
+          );
+        
+          mp = createMediaPlayer(
+          "file:///C:/Users/Duncan/Downloads/iCloud%20Photos%20from%20Duncan%20Agar/iCloud%20Photos%20from%20Duncan%20Agar/IMG_4274.MP4", 
           status
         );
 
@@ -46,7 +56,6 @@ public class App extends Application
         }
 
     }
-
     public static void main(String[] args) {
         launch();
     }
