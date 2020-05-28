@@ -2,6 +2,8 @@ package ShakasVideoPlayer;
 
 import javafx.scene.paint.Color;
 
+import javax.swing.*;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -27,7 +29,10 @@ public class App extends Application
     @Override
     public void start(Stage stage) {
         final Label status = new Label("");
-
+        int number = 1;
+        if(number == 1) {
+          gardenToKitchen();
+        }
         mp = createMediaPlayer(
           "file:///C:/Users/Duncan/Downloads/iCloud%20Photos%20from%20Duncan%20Agar/iCloud%20Photos%20from%20Duncan%20Agar/IMG_4274.MP4", 
           status
@@ -42,7 +47,7 @@ public class App extends Application
           "file:///C:/Users/Duncan/Downloads/iCloud%20Photos%20from%20Duncan%20Agar/iCloud%20Photos%20from%20Duncan%20Agar/IMG_4274.MP4", 
           status
         );
-
+        
         VBox layout = new VBox(10);
         Pane shakasass = new Pane();
         shakasass.getChildren().add(new MediaView(mp));
@@ -58,6 +63,18 @@ public class App extends Application
     }
     public static void main(String[] args) {
         launch();
+        
+    }
+
+    /**
+     * lol
+     */
+    private void gardenToKitchen() {
+      final Label status = new Label("");
+      mp = createMediaPlayer(
+        "file:///C:/Users/Duncan/Downloads/iCloud%20Photos%20from%20Duncan%20Agar/iCloud%20Photos%20from%20Duncan%20Agar/IMG_4274.MP4", 
+        status
+      );
     }
 
     private MediaPlayer createMediaPlayer(final String url, final Label status) {
